@@ -1,0 +1,27 @@
+﻿# Archivos auxiliares de QGIS
+*.tif.aux.xml
+*.qmd
+
+# Versiones anteriores y respaldos
+**/anteriores/
+**/anterior/
+
+# Datasets intermedios de presencias y ausencias
+data/processed/dataset_modelo/dataset_ausencias_20??_0[1-6].*
+data/processed/dataset_modelo/dataset_presencias_20??_0[1-6].*
+data/processed/dataset_modelo/dataset_presencias_20??_06shp.*
+
+# Modelo entrenado de gran tamaño
+modelado/random_forest_incendios.pkl
+
+# Archivos temporales de Python y Jupyter
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+@'
+
+# Versiones alternativas de temperatura 2020
+data/processed/temperature_anual/tmax_2020_30m_RECONSTRUIDO.tif
+data/processed/temperature_anual/tmax_2020_anual_reconstruido.tif
+'@ | Add-Content ".gitignore"
